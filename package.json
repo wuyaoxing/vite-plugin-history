@@ -1,0 +1,36 @@
+{
+  "name": "vite-plugin-history",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vite-plugin-history.umd.js",
+  "module": "./dist/vite-plugin-history.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-history.es.js",
+      "require": "./dist/vite-plugin-history.umd.js"
+    }
+  },
+  "author": "wuyaoxing",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "vite": "^2.4.2"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/wuyaoxing/vite-plugin-history",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wuyaoxing/vite-plugin-history.git"
+  },
+  "keywords": [
+    "vite-plugin",
+    "history",
+    "multi-page"
+  ]
+}
