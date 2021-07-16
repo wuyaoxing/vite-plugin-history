@@ -1,6 +1,6 @@
-import history from 'connect-history-api-fallback'
+const history = require('connect-history-api-fallback')
 
-export default function createVitePluginHistory(options) {
+module.exports = function createVitePluginHistory(options) {
     return {
         name: 'vite-plugin-history',
         enforce: 'pre',
